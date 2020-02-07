@@ -3,7 +3,7 @@ addReviewers: true
 
 # Set to true to add assignees to pull requests
 # 여기를 author 로 하면 풀리퀘 작성자를 어사이너로 등록함.
-addAssignees: true
+addAssignees: author
 
 # A list of reviewers to be added to pull requests (GitHub user name) (required)
 reviewers:
@@ -13,14 +13,3 @@ reviewers:
 # A number of reviewers added to the pull request (required)
 # Set 0 to add all the reviewers (default: 0)
 numberOfReviewers: 1
-
-# A list of assignees, overrides reviewers if set
-# assignees 에는 반드시 CODEOWNER 중 최소 1명이 들어가야 합니다.
-assignees:
-  - majac6
-  - pys99pys
-
-# A number of assignees to add to the pull request
-# Set to 0 to add all of the assignees.
-# Uses numberOfReviewers if unset.
-numberOfAssignees: 1
